@@ -10,7 +10,7 @@ import numpy as np
 import joblib
 import os
 import plotly.express as px
-
+from xgboost import XGBClassifier
 
 # ============================================================
 # PAGE CONFIGURATION
@@ -112,7 +112,7 @@ BASE_DIR = os.path.dirname(
 MODEL_PATH = os.path.join(
     BASE_DIR,
     "models",
-    "xgboost_intrusion_model.pkl"
+    "xgboost_intrusion_model.json"
 )
 
 PREPROCESSOR_PATH = os.path.join(
@@ -136,21 +136,13 @@ preprocessor_error = None
 # ---------------- LOAD XGBOOST MODEL ----------------
 
 try:
-
     if os.path.exists(MODEL_PATH):
-
-        model = joblib.load(
-            MODEL_PATH
-        )
-
+        model = XGBClassifier()
+        model.load_model(MODEL_PATH)
     else:
-
-        model_error = (
-            "XGBoost model file was not found."
-        )
+        model_error = "XGBoost JSON model file was not found."
 
 except Exception as e:
-
     model_error = str(e)
 
 
