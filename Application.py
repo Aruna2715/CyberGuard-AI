@@ -174,9 +174,6 @@ except Exception as e:
 
     preprocessor_error = str(e)
 
-    st.error(
-        f"Preprocessor loading error: {preprocessor_error}"
-    )
 
 # ============================================================
 # SIDEBAR
@@ -246,17 +243,18 @@ with st.sidebar:
             "⚠️ Model not loaded"
         )
 
-if preprocessor is not None:
+    if preprocessor is not None:
 
-    st.success(
-        "⚙️ Preprocessor ACTIVE"
-    )
+        st.success(
+            "⚙️ Preprocessor ACTIVE"
+        )
 
-else:
+    else:
 
-    st.error(
-        f"⚠️ {preprocessor_error}"
-    )
+        st.error(
+            "⚠️ Preprocessor not loaded"
+        )
+
 
 # ============================================================
 # SECURITY OVERVIEW
