@@ -252,7 +252,7 @@ GitHub Profile:
 
 If you find this project useful, consider giving this repository a **⭐ Star**.
 
-It helps others discover the project and supports my work.
+It helps others discover the project and support my work.
 
 ---
 
