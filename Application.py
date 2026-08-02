@@ -139,12 +139,12 @@ try:
     if os.path.exists(MODEL_PATH):
         model = XGBClassifier()
         model.load_model(MODEL_PATH)
+        model.set_params(n_jobs=1)
     else:
         model_error = "XGBoost JSON model file was not found."
 
 except Exception as e:
     model_error = str(e)
-
 
 # ---------------- LOAD PREPROCESSOR ----------------
 
