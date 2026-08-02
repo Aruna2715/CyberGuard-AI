@@ -1,262 +1,261 @@
 # 🛡️ CyberGuard AI
-
 ## AI-Powered Network Intrusion Detection System
 
-CyberGuard AI is a machine learning-based Network Intrusion Detection System (NIDS) developed using the UNSW-NB15 dataset. The system analyzes network traffic and classifies network connections as either normal traffic or attack traffic.
+[![Streamlit](https://img.shields.io/badge/Live%20Demo-Streamlit-red?logo=streamlit)](https://cyberguard-ai-kdavjmfr6b5ewo3m9fpb7x.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![XGBoost](https://img.shields.io/badge/XGBoost-3.0.4-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.6.1-orange)
+![License](https://img.shields.io/badge/License-Apache--2.0-blue)
 
 ---
 
-# 👩‍💻 Internship Information
+# 🌐 Live Application
 
-| Field | Details |
-|------|------|
-| Full Name | Aruna V S |
-| Intern ID | CITS5433 |
-| Selected For | Machine Learning |
-| Organization | CODTECH IT SOLUTIONS PRIVATE LIMITED |
-| Duration | 6 Weeks |
-| Internship Period | 22 June 2026 – 03 August 2026 |
+### 🚀 Try CyberGuard AI here
+
+### **https://cyberguard-ai-kdavjmfr6b5ewo3m9fpb7x.streamlit.app/**
 
 ---
 
-# 📌 Project Name
+# 📌 Project Overview
 
-Network Intrusion Detection using Machine Learning
+CyberGuard AI is an AI-powered **Network Intrusion Detection System (NIDS)** developed using the **UNSW-NB15 dataset**. The application leverages Machine Learning to classify network traffic as either **Normal** or **Attack** traffic in real time.
 
----
-
-# 🎯 Project Scope
-
-The objective of this project is to develop a machine learning model capable of identifying malicious network traffic.
-
-The project includes:
-
-- Data cleaning
-- Data preprocessing
-- Feature transformation
-- Data visualization
-- Model training
-- Model evaluation
-- Dashboard creation
-- Intrusion prediction
+Users can upload network traffic datasets through an intuitive Streamlit dashboard, visualize prediction results, analyze attack probabilities, and download the classified output.
 
 ---
 
-# 📊 Dataset Information
+# ✨ Features
 
-### Dataset Name
-
-UNSW-NB15 Dataset
-
-### Dataset Statistics
-
-| Dataset | Records | Features |
-|------|------:|------:|
-| Training Dataset | 175,341 | 45 |
-| Testing Dataset | 82,332 | 45 |
-
-### Attack Categories
-
-- Normal
-- Generic
-- Exploits
-- Fuzzers
-- DoS
-- Reconnaissance
-- Analysis
-- Backdoor
-- Shellcode
-- Worms
+- 🛡️ AI-Powered Intrusion Detection
+- 📂 Upload Network Traffic CSV Files
+- 🤖 XGBoost-Based Prediction Engine
+- 📊 Attack Probability Estimation
+- 📈 Interactive Dashboard
+- 📉 Model Performance Analytics
+- 📥 Download Prediction Results
+- ⚡ Batch Processing for Large Datasets
+- 🌐 Live Streamlit Cloud Deployment
 
 ---
 
-# 🧹 Data Preprocessing
+# 📂 Dataset
 
-The following preprocessing steps were performed:
+**Dataset Used:** UNSW-NB15
 
-- Loaded training and testing datasets.
-- Removed the `id` column.
-- Removed the `attack_cat` column.
-- Separated the `label` column.
-- Identified categorical features.
-- Applied feature transformation.
-- Generated processed datasets.
+| Dataset | Records |
+|----------|---------|
+| Training Dataset | 175,341 |
+| Testing Dataset | 82,332 |
 
-### Categorical Features
+### Target Classes
 
-- proto
-- service
-- state
-
-### Processed Dataset Shape
-
-| Dataset | Shape |
-|------|------|
-| Training Data | (175341, 194) |
-| Testing Data | (82332, 194) |
+- ✅ Normal Traffic
+- 🚨 Attack Traffic
 
 ---
 
-# 🤖 Machine Learning Models
+# 🧠 Machine Learning Models Evaluated
 
-Three machine learning algorithms were used.
+| Model | Accuracy | Precision | Recall | ROC-AUC |
+|--------|----------|-----------|---------|----------|
+| Logistic Regression | 80.97% | 75.35% | 97.25% | 95.58% |
+| Random Forest | 87.14% | 81.74% | 98.70% | 97.91% |
+| **XGBoost** | **87.37%** | **82.08%** | **98.60%** | **98.43%** |
 
-### Logistic Regression
-
-- Accuracy: 80.97%
-- Precision: 75.35%
-- Recall: 97.25%
-- F1-score: 84.91%
-- ROC-AUC: 95.58%
+🏆 **Final Model Selected:** **XGBoost**
 
 ---
 
-### Random Forest
-
-- Accuracy: 87.14%
-- Precision: 81.74%
-- Recall: 98.70%
-- F1-score: 89.42%
-- ROC-AUC: 97.91%
-
----
-
-### XGBoost
-
-- Accuracy: 87.37%
-- Precision: 82.08%
-- Recall: 98.60%
-- F1-score: 89.58%
-- ROC-AUC: 98.43%
-
----
-
-# 🏆 Final Model
-
-The XGBoost model achieved the highest performance and was selected as the final model for the CyberGuard AI system.
-
----
-
-# 🖥️ Dashboard Features
-
-The Streamlit dashboard contains four sections.
+# 📊 Dashboard Pages
 
 ### 🛡️ Security Overview
 
-- Model accuracy
-- Attack recall
-- ROC-AUC score
-- Model comparison
-- System pipeline
-
-### 🔍 Intrusion Detection
-
-- Upload network traffic data
-- Detect malicious traffic
-- Generate predictions
-- Display attack probability
-
-### 📊 Model Analytics
-
-- Performance metrics
-- Graphical analysis
-- Model comparison
-
-### ℹ️ About Project
-
-- Project overview
-- Technologies used
-- Dataset summary
+- AI Detection Pipeline
+- Dataset Summary
+- Model Performance
+- Model Comparison
 
 ---
 
-# 🛠️ Technologies Used
+### 🔍 Intrusion Detection
+
+- Upload CSV
+- Detect Attacks
+- Attack Probability
+- Download Results
+
+---
+
+### 📈 Model Analytics
+
+- Accuracy
+- Precision
+- Recall
+- ROC-AUC
+- Interactive Charts
+
+---
+
+### ℹ️ About Project
+
+- Technologies Used
+- Dataset Information
+- Project Summary
+
+---
+
+# ⚙️ Technologies Used
 
 - Python
+- Streamlit
+- XGBoost
+- Scikit-Learn
 - Pandas
 - NumPy
-- Scikit-learn
-- XGBoost
-- Streamlit
 - Plotly
 - Joblib
-- Jupyter Notebook
 
 ---
 
 # 📁 Project Structure
 
 ```text
-Jupyter Home
+CyberGuard-AI
 │
 ├── Application.py
+├── requirements.txt
 ├── README.md
-├── Network Intrusion Detection.ipynb
 │
-├── models/
-│   ├── xgboost_intrusion_model.pkl
-│   └── preprocessor.pkl
+├── models
+│   ├── preprocessor.pkl
+│   └── xgboost_intrusion_model.json
 │
-├── Dataset/
-│   ├── UNSW_NB15_training-set.csv
-│   └── UNSW_NB15_testing-set.csv
+├── screenshots
+│   ├── security_overview.png
+│   ├── intrusion_detection.png
+│   ├── prediction_results.png
+│   ├── model_analytics.png
+│   └── about_project.png
 │
-└── screenshots/
-    ├── security_overview.png
-    ├── intrusion_detection.png
-    ├── prediction_results.png
-    ├── model_analytics.png
-    └── about_project.png
+└── Dataset
 ```
 
 ---
 
-# 📸 Screenshots
+# 🚀 Run Locally
 
-- Security Overview
-- Intrusion Detection
-- Prediction Results
-- Model Analytics
-- About Project
+```bash
+git clone https://github.com/Aruna2715/CyberGuard-AI.git
 
----
+cd CyberGuard-AI
 
-# 📦 Project Deliverables
+pip install -r requirements.txt
 
-This repository contains:
-
-- Source code
-- Dataset files
-- Trained model
-- Preprocessor
-- Jupyter notebook
-- Dashboard screenshots
-- README file
+streamlit run Application.py
+```
 
 ---
 
-# ✅ Conclusion
+# 📷 Application Screenshots
 
-CyberGuard AI successfully detects malicious network activity using machine learning techniques.
+## 🛡️ Security Overview
 
-Among the evaluated models, XGBoost achieved the best performance with:
-
-- Accuracy: 87.37%
-- Precision: 82.08%
-- Recall: 98.60%
-- F1-score: 89.58%
-- ROC-AUC: 98.43%
-
-The final model was deployed through a Streamlit dashboard to provide an interactive intrusion detection system.
+<p align="center">
+<img src="screenshots/security_overview.png" width="900">
+</p>
 
 ---
 
-# 👩‍💻 Developed By
+## 🔍 Intrusion Detection
 
-**Aruna V S**
+<p align="center">
+<img src="screenshots/intrusion_detection.png" width="900">
+</p>
 
-**Intern ID:** CITS5433
+---
 
-**Machine Learning Intern**
+## 📊 Prediction Results
 
-**CODTECH IT SOLUTIONS PRIVATE LIMITED**
+<p align="center">
+<img src="screenshots/prediction_results.png" width="900">
+</p>
+
+---
+
+## 📈 Model Analytics
+
+<p align="center">
+<img src="screenshots/model_analytics.png" width="900">
+</p>
+
+---
+
+## ℹ️ About Project
+
+<p align="center">
+<img src="screenshots/about_project.png" width="900">
+</p>
+
+---
+
+# 📈 Model Performance
+
+| Metric | Score |
+|---------|--------|
+| Accuracy | **87.37%** |
+| Precision | **82.08%** |
+| Recall | **98.60%** |
+| F1-Score | **89.58%** |
+| ROC-AUC | **98.43%** |
+
+---
+
+# 🎯 Key Highlights
+
+- ✅ End-to-End Machine Learning Project
+- ✅ AI-Based Network Intrusion Detection
+- ✅ Real-Time Prediction Dashboard
+- ✅ Cloud Deployed using Streamlit Community Cloud
+- ✅ Interactive Data Visualization
+- ✅ Downloadable Prediction Reports
+- ✅ Batch Processing Support
+- ✅ Production-Ready User Interface
+
+---
+
+# 🔮 Future Enhancements
+
+- Explainable AI using SHAP
+- Deep Learning Models
+- Multi-Class Attack Classification
+- REST API Integration
+- Live Packet Capture
+- Real-Time Network Monitoring
+- User Authentication
+
+---
+
+# 👩‍💻 Developer
+
+## **Aruna V S**
+
+**Machine Learning | Data Science | Artificial Intelligence**
+
+GitHub Profile:
+
+**https://github.com/Aruna2715**
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving this repository a **⭐ Star**.
+
+It helps others discover the project and supports my work.
+
+---
+
+## 🚀 Live Demo
+
+### https://cyberguard-ai-kdavjmfr6b5ewo3m9fpb7x.streamlit.app/
