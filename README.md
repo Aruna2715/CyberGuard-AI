@@ -18,7 +18,7 @@
 | **Organization** | CODTECH IT SOLUTIONS PRIVATE LIMITED |
 | **Internship Duration** | 6 Weeks |
 | **Internship Period** | 22 June 2026 – 03 August 2026 |
-| **Project** | Recommendation System with LightFM |
+| **Project** | Network Intrusion Detection |
 # 🌐 Live Application
 
 ### 🚀 Try CyberGuard AI here
